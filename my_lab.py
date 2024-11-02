@@ -13,6 +13,7 @@ from get_emotion import  get_emotion_vec
 from train_text2emo import train,AutoregressiveModel,predict
 from get_hubert import wav2hubert
 from text2phonemes import get_phonemes
+from get_phones_bert import get_all_phones_bert
 
 def slice_wav(train_file_name):
     slice_inp_path = "resources/train/" + train_file_name
@@ -267,5 +268,5 @@ if __name__ == "__main__":
     # text = "我恨你"
     # prompt_audio_path = "resources/train/shoulinrui.m4a_0000513280_0000795840.wav"
     # max_length=10
-    # model1_infer(text,prompt_audio_path,max_length)
-
+    # model1_infer(text,prompt_aud io_path,max_length)
+    get_all_phones_bert(train_filename)
