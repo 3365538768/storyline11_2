@@ -148,6 +148,7 @@ def get_all_phones_bert(train_file_name):
             print(line, traceback.format_exc())
 
     process(todo, res)
+
     opt = []
     for name, phones, word2ph, norm_text in res:
         opt.append("%s\t%s\t%s\t%s" % (name, phones, word2ph, norm_text))
